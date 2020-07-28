@@ -1,7 +1,6 @@
-package com.rajat.learning.learning1;
+package com.rajat.learning.producers;
 
 import org.apache.kafka.clients.producer.*;
-import org.apache.kafka.common.protocol.types.Field;
 import org.apache.kafka.common.serialization.StringSerializer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

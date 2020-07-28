@@ -1,7 +1,6 @@
-package com.rajat.learning.learning1;
+package com.rajat.learning.producers;
 
 import org.apache.kafka.clients.producer.KafkaProducer;
-import org.apache.kafka.clients.producer.Producer;
 import org.apache.kafka.clients.producer.ProducerConfig;
 import org.apache.kafka.clients.producer.ProducerRecord;
 import org.apache.kafka.common.serialization.StringSerializer;
@@ -27,7 +26,7 @@ public class ProducerDemo {
         producer.send(record);
 
         // Send the data and flush it
-        //producer.flush();
+        producer.flush();
 
         // Send the data and flush it and close it
         producer.close();
